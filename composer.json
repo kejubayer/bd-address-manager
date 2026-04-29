@@ -1,0 +1,70 @@
+{
+  "name": "kejubayer/bd-address-manager",
+  "description": "Laravel package for managing Bangladesh address hierarchy (Division, District, Upazila, Union) with multilingual support, helper functions, and JSON seeder.",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "bangladesh",
+    "address",
+    "bd address",
+    "division district upazila union",
+    "geo data",
+    "location",
+    "laravel package",
+    "bd address laravel",
+    "address hierarchy",
+    "bangla english address",
+    "dropdown location laravel"
+  ],
+  "homepage": "https://github.com/kejubayer/bd-address-manager",
+  "license": "MIT",
+
+  "authors": [
+    {
+      "name": "Khondoker Eftakhar Jubayer",
+      "email": "khondokereftakharjubayer@gmail.com",
+      "role": "Developer"
+    }
+  ],
+
+  "support": {
+    "issues": "https://github.com/kejubayer/bd-address-manager/issues",
+    "source": "https://github.com/kejubayer/bd-address-manager"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Kejubayer\\BdAddress\\": "src/"
+    },
+    "files": [
+      "src/Helpers/helpers.php"
+    ]
+  },
+
+  "autoload-dev": {
+    "psr-4": {
+      "Kejubayer\\BdAddress\\Tests\\": "tests/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kejubayer\\BdAddress\\BdAddressServiceProvider"
+      ]
+    }
+  },
+
+  "require": {
+    "php": ">=7.4",
+    "illuminate/support": "^8.0|^9.0|^10.0"
+  },
+
+  "require-dev": {
+    "orchestra/testbench": "^6.0|^7.0|^8.0",
+    "phpunit/phpunit": "^9.0"
+  },
+
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
